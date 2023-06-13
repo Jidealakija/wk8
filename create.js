@@ -3,7 +3,7 @@ const heading = document.createElement('h2')
 heading.innerText = 'This is append Element'
 heading.setAttribute('class', 'head1')
 section.append(heading)
-document.body.style.background = 'purple'
+document.body.style.background = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`
 document.body.style.color = 'white'
 
 
