@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <style>
+        body{
+            background-color: aqua;
+            color: black;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>body mass index (bmi) Calculator</h1>
+
+    <main>
+        <section>
+            <label for="weight">Weight:</label>
+            <input type="number" name="weight" id="weight" placeholder="enter your weight in kg">
+            <label for="height">Height</label>
+            <input type="number" name="height" id="height" placeholder="enter your height cm">
+            <p><button>Calculate</button></p>
+        </section>
+
+        <section>
+            <h2>Result</h2>
+            <div class="hidden">
+                <p>
+                    <span class="result"></span>
+                    <span>kgm<sup>-2</sup></span>
+                </p>
+
+                <p>
+                    status: 
+                    <span class="status"></span>
+                </p>
+
+                <p>
+                    recommendation:
+                    <span class="recommend"></span>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./bmi.js"></script>
+</html>
